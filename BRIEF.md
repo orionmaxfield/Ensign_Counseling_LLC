@@ -3,18 +3,18 @@
 Fill every line. Claude reads this file to build the site. Use the exact same name, address, and phone the client uses on Google and Psychology Today.
 
 ## Practice
-- Practice name:
-- Clinician name:
-- Credentials (LCSW, CMHC, PhD…):
+- Practice name: Ensign Counseling
+- Clinician name: Mike Jensen
+- Credentials (LCSW, CMHC, PhD…): LCSW
 - License number and state (optional, for footer):
-- Domain (with https://, no trailing slash):
+- Domain (with https://, no trailing slash): www.ensigncounseling.com
 
 ## Contact (must match Google Business Profile exactly)
-- Street address:
-- City:
-- State (2-letter):
-- ZIP:
-- Phone (display, e.g. (801) 555-0100):
+- Street address: 1291 W. 12600 So., suite 102
+- City: Riverton
+- State (2-letter): UT
+- ZIP: 84065
+- Phone (display, e.g. (801) 555-0100): 385-275-5737
 - Email:
 - Hours (e.g. Monday–Friday, 9 am–5 pm):
 - Telehealth offered? (yes/no, which states):
