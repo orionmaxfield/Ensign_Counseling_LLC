@@ -1,0 +1,6 @@
+# Cloudflare Pages redirects. One per line: old-path new-path status
+# Use when migrating from WordPress so old links keep their rankings.
+# Examples (delete these lines on a fresh site):
+# /anxiety-counseling/   /services/anxiety-therapy/   301
+# /about-me/             /about/                       301
+# /contact-us/           /contact/                     301

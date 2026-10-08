@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- SEO: unique on every page. Format: "Topic in City | Name, Credentials" -->
+  <title>Fees and Insurance | {{PRACTICE_NAME}}, {{CITY}}</title>
+  <meta name="description" content="Session fees, insurance accepted, and sliding-scale options at {{PRACTICE_NAME}} in {{CITY}}, {{STATE}}.">
+  <link rel="canonical" href="{{DOMAIN}}/fees/">
+  <meta property="og:title" content="Fees and Insurance | {{PRACTICE_NAME}}, {{CITY}}">
+  <meta property="og:description" content="Session fees, insurance accepted, and sliding-scale options at {{PRACTICE_NAME}} in {{CITY}}, {{STATE}}.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{DOMAIN}}/fees/">
+  <meta property="og:image" content="{{DOMAIN}}/images/og-image.jpg">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- Schema: tells Google who, where, and when. Keep identical to Google Business Profile. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["LocalBusiness", "MedicalBusiness"],
+        "@id": "{{DOMAIN}}/#practice",
+        "name": "{{PRACTICE_NAME}}",
+        "url": "{{DOMAIN}}/",
+        "telephone": "{{PHONE_TEL}}",
+        "email": "{{EMAIL}}",
+        "image": "{{DOMAIN}}/images/clinician.jpg",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "{{STREET}}",
+          "addressLocality": "{{CITY}}",
+          "addressRegion": "{{STATE}}",
+          "postalCode": "{{ZIP}}",
+          "addressCountry": "US"
+        },
+        "geo": { "@type": "GeoCoordinates", "latitude": "{{LAT}}", "longitude": "{{LNG}}" },
+        "openingHours": "{{HOURS_SCHEMA}}",
+        "areaServed": "{{CITY}}, {{STATE_FULL}}",
+        "priceRange": "$$"
+      },
+      {
+        "@type": "Person",
+        "@id": "{{DOMAIN}}/#clinician",
+        "name": "{{CLINICIAN_NAME}}",
+        "honorificSuffix": "{{CREDENTIALS}}",
+        "jobTitle": "Therapist",
+        "worksFor": { "@id": "{{DOMAIN}}/#practice" },
+        "url": "{{DOMAIN}}/about/"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../">{{PRACTICE_NAME}}<small>{{CLINICIAN_NAME}}, {{CREDENTIALS}} · {{CITY}}, {{STATE}}</small></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="site-nav" id="nav" aria-label="Main">
+      <ul>
+        <li><a href="../about/">About</a></li>
+        <li><a href="../services/{{SPECIALTY_1_SLUG}}/">{{SPECIALTY_1}}</a></li>
+        <li><a href="../fees/" aria-current="page">Fees &amp; insurance</a></li>
+        <li><a href="../contact/">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main>
+
+<section>
+  <div class="wrap">
+    <h1>Fees and insurance</h1>
+    <p class="lead">{{FEES_SENTENCE}}</p>
+    <table>
+      <tr><th>Free phone consult</th><td>{{CONSULT_LENGTH}}, no charge</td></tr>
+      <tr><th>Individual session (50 min)</th><td>{{SESSION_FEE}}</td></tr>
+      <tr><th>Insurance</th><td>{{INSURANCE_LIST}}</td></tr>
+      <tr><th>Reduced-rate spots</th><td>{{SLIDING_SCALE}}</td></tr>
+    </table>
+    <h2>Out-of-network</h2>
+    <p>If I'm not in your plan's network, I can provide a superbill you submit for partial reimbursement. Call your insurer and ask about "out-of-network mental health benefits."</p>
+    <h2>Cancellations</h2>
+    <p>{{CANCELLATION_POLICY}}</p>
+    <p class="note">You have the right to a Good Faith Estimate of costs under the No Surprises Act. Ask and I'll provide one.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="panel">
+      <h2>Ready when you are</h2>
+      <p>A free phone call ({{CONSULT_LENGTH}}) is the easiest first step. No pressure, just a chance to see if we're a good fit.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="../contact/">Request a free consult</a>
+        <a class="btn btn-ghost" href="tel:{{PHONE_TEL}}">Call {{PHONE_DISPLAY}}</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <address>
+      <strong>{{PRACTICE_NAME}}</strong><br>
+      {{STREET}}<br>
+      {{CITY}}, {{STATE}} {{ZIP}}<br>
+      <a href="tel:{{PHONE_TEL}}">{{PHONE_DISPLAY}}</a><br>
+      <a href="mailto:{{EMAIL}}">{{EMAIL}}</a><br>
+      {{HOURS_DISPLAY}}
+    </address>
+    <div>
+      <p>{{CLINICIAN_NAME}}, {{CREDENTIALS}}<br>Licensed in {{STATE_FULL}}</p>
+      <p>If you are in crisis, call or text 988 (Suicide and Crisis Lifeline) or go to your nearest emergency room. This website does not provide emergency services.</p>
+      <p><a href="../privacy/">Privacy</a></p>
+    </div>
+  </div>
+</footer>
+<script src="../js/main.js"></script>
+</body>
+</html>
